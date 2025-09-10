@@ -6,8 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 
 public class Tut1Sender {
-    private RabbitTemplate template;
-    private Queue queue;
+    private final RabbitTemplate template;
+    private final Queue queue;
 
     public Tut1Sender(RabbitTemplate template, Queue queue) {
         this.template = template;
